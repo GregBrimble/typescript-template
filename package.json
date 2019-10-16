@@ -1,0 +1,29 @@
+{
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "build": "tsc --outDir dist/",
+    "build:watch": "npm run build -- --watch",
+    "lint": "prettier 'src/**/*.ts'",
+    "lint:fix": "npm run lint -- --write",
+    "prestart": "npm run build",
+    "start": "node dist/index.js"
+  },
+  "author": {
+    "name": "Greg Brimble",
+    "email": "personal@gregbrimble.com",
+    "url": "https://gregbrimble.com/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.6.2"
+  }
+}
