@@ -1,1 +1,1 @@
-console.log(`hi`)
+export const gretter = (name?: string) => `Hello, ${name || "World"}!`;
