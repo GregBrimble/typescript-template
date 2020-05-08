@@ -5,6 +5,8 @@
     "test:watch": "npm run test -- --watch",
     "build": "tsc --outDir dist/",
     "build:watch": "npm run build -- --watch",
+    "clean": "rimraf dist/",
+    "clean:node": "rimraf package-lock.json node_modules/",
     "lint": "prettier -c 'src/**/*.ts'",
     "lint:fix": "npm run lint -- --write",
     "prestart": "npm run build",
@@ -22,6 +24,7 @@
     "jest": "26.0.1",
     "npm-check-updates": "4.1.2",
     "prettier": "2.0.5",
+    "rimraf": "3.0.2",
     "ts-jest": "25.5.0",
     "typescript": "3.8.3"
   }
